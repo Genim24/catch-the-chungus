@@ -25,5 +25,17 @@ namespace catch_the_chungus
         {
 
         }
+
+        private void PnlGame_Paint(object sender, PaintEventArgs e)
+        {
+            g = e.Graphics;// sets g to the Graphics object supplied in the PaintEventArgs
+            //set the x and y positions of alienRec
+            alienRec.X = 30;
+            alienRec.Y = 60;
+            //draw the alien image in the alien rectangle at (30,60)
+            //remember: 30 is 30 to the right and 60 means 60 DOWN
+            g.DrawImage(alien, alienRec);
+
+        }
     }
 }
