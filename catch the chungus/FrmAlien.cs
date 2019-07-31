@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace catch_the_chungus
 {
-    public partial class Form1 : Form
+    public partial class FrmAlien : Form
     {
-        public Form1()
+        public FrmAlien()
         {
             InitializeComponent();
         }

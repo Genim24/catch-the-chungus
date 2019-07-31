@@ -1,6 +1,6 @@
 ﻿namespace catch_the_chungus
 {
-    partial class Form1
+    partial class FrmAlien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.PnlGame = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // panel1
+            // PnlGame
             // 
-            this.panel1.Location = new System.Drawing.Point(203, 285);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 0;
+            this.PnlGame.Location = new System.Drawing.Point(10, 160);
+            this.PnlGame.Name = "PnlGame";
+            this.PnlGame.Size = new System.Drawing.Size(300, 300);
+            this.PnlGame.TabIndex = 0;
             // 
-            // Form1
+            // FrmAlien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.PnlGame);
+            this.Name = "FrmAlien";
+            this.Text = "Catch The Chungus";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel PnlGame;
     }
 }
 
