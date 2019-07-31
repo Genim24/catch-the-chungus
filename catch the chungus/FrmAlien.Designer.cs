@@ -46,6 +46,7 @@
             this.Controls.Add(this.PnlGame);
             this.Name = "FrmAlien";
             this.Text = "Catch The Chungus";
+            this.Load += new System.EventHandler(this.FrmAlien_Load);
             this.ResumeLayout(false);
 
         }

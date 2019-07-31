@@ -12,9 +12,18 @@ namespace catch_the_chungus
 {
     public partial class FrmAlien : Form
     {
+        Rectangle alienRec = new Rectangle(0, 0, 50, 65);
+        Image alien = Image.FromFile(Application.StartupPath + @"\alien.png");
+        Graphics g;
+
         public FrmAlien()
         {
             InitializeComponent();
+        }
+
+        private void FrmAlien_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
