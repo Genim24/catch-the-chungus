@@ -15,6 +15,7 @@ namespace catch_the_chungus
         Rectangle alienRec = new Rectangle(0, 0, 50, 65);
         Image alien = Image.FromFile(Application.StartupPath + @"\alien.png");
         Graphics g;
+        Random rand = new Random();
 
         public FrmAlien()
         {
@@ -30,10 +31,9 @@ namespace catch_the_chungus
         {
             g = e.Graphics;// sets g to the Graphics object supplied in the PaintEventArgs
             //set the x and y positions of alienRec
-            alienRec.X = 30;
-            alienRec.Y = 60;
-            //draw the alien image in the alien rectangle at (30,60)
-            //remember: 30 is 30 to the right and 60 means 60 DOWN
+            alienRec.X = rand.Next(240);
+            alienRec.Y = rand.Next(240);
+            //draw the alien image randomly on the panel
             g.DrawImage(alien, alienRec);
 
         }
