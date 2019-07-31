@@ -37,5 +37,10 @@ namespace catch_the_chungus
             g.DrawImage(alien, alienRec);
 
         }
+
+        private void TmrAlien_Tick(object sender, EventArgs e)
+        {
+            PnlGame.Invalidate();
+        }
     }
 }
