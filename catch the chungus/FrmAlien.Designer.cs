@@ -79,7 +79,6 @@
             this.LblScore.Name = "LblScore";
             this.LblScore.Size = new System.Drawing.Size(60, 30);
             this.LblScore.TabIndex = 3;
-            this.LblScore.Text = "0";
             // 
             // FrmAlien
             // 
@@ -93,6 +92,7 @@
             this.Name = "FrmAlien";
             this.Text = "Catch The Chungus";
             this.Load += new System.EventHandler(this.FrmAlien_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FrmAlien_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
