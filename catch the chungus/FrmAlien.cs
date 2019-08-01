@@ -16,7 +16,8 @@ namespace catch_the_chungus
         Image alien = Image.FromFile(Application.StartupPath + @"\alien.png");
         Graphics g;
         Random rand = new Random();
-        int score;
+        int score = 20;
+        int speed;
 
         public FrmAlien()
         {

@@ -75,7 +75,7 @@
             // 
             this.LblScore.BackColor = System.Drawing.Color.White;
             this.LblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LblScore.Location = new System.Drawing.Point(382, 127);
+            this.LblScore.Location = new System.Drawing.Point(373, 124);
             this.LblScore.Name = "LblScore";
             this.LblScore.Size = new System.Drawing.Size(60, 30);
             this.LblScore.TabIndex = 3;
