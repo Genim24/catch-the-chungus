@@ -32,6 +32,8 @@
             this.PnlGame = new System.Windows.Forms.Panel();
             this.TmrAlien = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // PnlGame
@@ -59,11 +61,33 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Catch The Chungus";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(369, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Score";
+            // 
+            // LblScore
+            // 
+            this.LblScore.BackColor = System.Drawing.Color.White;
+            this.LblScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LblScore.Location = new System.Drawing.Point(382, 127);
+            this.LblScore.Name = "LblScore";
+            this.LblScore.Size = new System.Drawing.Size(60, 30);
+            this.LblScore.TabIndex = 3;
+            this.LblScore.Text = "0";
+            // 
             // FrmAlien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.LblScore);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PnlGame);
             this.Name = "FrmAlien";
@@ -79,6 +103,8 @@
         private System.Windows.Forms.Panel PnlGame;
         private System.Windows.Forms.Timer TmrAlien;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblScore;
     }
 }
 
