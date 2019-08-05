@@ -16,8 +16,8 @@ namespace catch_the_chungus
         Image alien = Image.FromFile(Application.StartupPath + @"\alien.png");
         Graphics g;
         Random rand = new Random();
-        int score = 20;
-        int speed;
+        int count = 20;
+        int score;
 
         public FrmAlien()
         {
@@ -55,6 +55,36 @@ namespace catch_the_chungus
                 score++;//add 1 to the score
                 LblScore.Text = score.ToString();// display the score
             }
+
+        }
+
+        private void MnuStart_Click(object sender, EventArgs e)
+        {
+            score = 0;
+            TmrAlien.Start(); //start the timer
+            TmrCountdown.Start();
+        }
+
+        private void MnuQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();//ends the program
+        }
+
+        private void TmrCountdown_Tick(object sender, EventArgs e)
+        {
+            count--;//decrease count by 1
+            LblTime.Text = count.ToString();//display count in LblTime
+
+            if (count == 0) 
+            {
+
+                TmrCountdown.Stop();
+                TmrAlien.Stop();
+                LblScore.Enabled = false;
+                LblTime.Enabled = false;
+                MessageBox.Show("Game Over!");
+            }
+
 
         }
     }
