@@ -47,15 +47,7 @@ namespace catch_the_chungus
 
         private void FrmAlien_MouseDown(object sender, MouseEventArgs e)
         {
-            int diffX = e.X - alienRec.X;
-            int diffY = e.Y - alienRec.Y;
-            double length = Math.Sqrt(Math.Pow(diffX, 2) + Math.Pow(diffY, 2));
-            if (length < 70)
-            {
-                score++;//add 1 to the score
-                LblScore.Text = score.ToString();// display the score
-            }
-
+          
         }
 
         private void MnuStart_Click(object sender, EventArgs e)
@@ -87,5 +79,17 @@ namespace catch_the_chungus
 
         }
 
+        private void PnlGame_MouseDown(object sender, MouseEventArgs e)
+        {
+            int diffX = e.X - alienRec.X;
+            int diffY = e.Y - alienRec.Y;
+            double length = Math.Sqrt(Math.Pow(diffX, 2) + Math.Pow(diffY, 2));
+            if (length < 70)
+            {
+                score++;//add 1 to the score
+                LblScore.Text = score.ToString();// display the score
+            }
+
+        }
     }
 }

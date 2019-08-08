@@ -52,6 +52,7 @@
             this.PnlGame.Size = new System.Drawing.Size(300, 300);
             this.PnlGame.TabIndex = 0;
             this.PnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlGame_Paint);
+            this.PnlGame.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlGame_MouseDown);
             // 
             // TmrAlien
             // 
