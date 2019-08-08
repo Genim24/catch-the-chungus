@@ -62,9 +62,8 @@ namespace catch_the_chungus
         {
             score = 0;
             TmrAlien.Start(); //start the timer
-            TmrCountdown.Start();
-        }
 
+        }
         private void MnuQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();//ends the program
@@ -75,7 +74,7 @@ namespace catch_the_chungus
             count--;//decrease count by 1
             LblTime.Text = count.ToString();//display count in LblTime
 
-            if (count == 0) 
+            if (count == 0)
             {
 
                 TmrCountdown.Stop();
@@ -87,5 +86,6 @@ namespace catch_the_chungus
 
 
         }
+
     }
 }

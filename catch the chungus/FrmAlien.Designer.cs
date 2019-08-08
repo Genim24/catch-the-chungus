@@ -35,12 +35,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LblScore = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-            this.MnuStart = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuQuit = new System.Windows.Forms.ToolStripMenuItem();
             this.TmrCountdown = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.LblTime = new System.Windows.Forms.Label();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.MnuStart = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuQuit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,31 +96,6 @@
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuStrip2
-            // 
-            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuStart,
-            this.MnuQuit});
-            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(484, 24);
-            this.menuStrip2.TabIndex = 5;
-            this.menuStrip2.Text = "menuStrip2";
-            // 
-            // MnuStart
-            // 
-            this.MnuStart.Name = "MnuStart";
-            this.MnuStart.Size = new System.Drawing.Size(52, 20);
-            this.MnuStart.Text = "START";
-            this.MnuStart.Click += new System.EventHandler(this.sTARTToolStripMenuItem_Click);
-            // 
-            // MnuQuit
-            // 
-            this.MnuQuit.Name = "MnuQuit";
-            this.MnuQuit.Size = new System.Drawing.Size(46, 20);
-            this.MnuQuit.Text = "QUIT";
-            this.MnuQuit.Click += new System.EventHandler(this.qUITToolStripMenuItem_Click);
-            // 
             // TmrCountdown
             // 
             this.TmrCountdown.Interval = 1000;
@@ -144,6 +119,31 @@
             this.LblTime.Name = "LblTime";
             this.LblTime.Size = new System.Drawing.Size(60, 30);
             this.LblTime.TabIndex = 7;
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuStart,
+            this.MnuQuit});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip2.TabIndex = 8;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // MnuStart
+            // 
+            this.MnuStart.Name = "MnuStart";
+            this.MnuStart.Size = new System.Drawing.Size(52, 20);
+            this.MnuStart.Text = "START";
+            this.MnuStart.Click += new System.EventHandler(this.MnuStart_Click);
+            // 
+            // MnuQuit
+            // 
+            this.MnuQuit.Name = "MnuQuit";
+            this.MnuQuit.Size = new System.Drawing.Size(46, 20);
+            this.MnuQuit.Text = "QUIT";
+            this.MnuQuit.Click += new System.EventHandler(this.MnuQuit_Click);
             // 
             // FrmAlien
             // 
@@ -178,12 +178,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LblScore;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.MenuStrip menuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem MnuStart;
-        private System.Windows.Forms.ToolStripMenuItem MnuQuit;
         private System.Windows.Forms.Timer TmrCountdown;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblTime;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem MnuStart;
+        private System.Windows.Forms.ToolStripMenuItem MnuQuit;
     }
 }
 
