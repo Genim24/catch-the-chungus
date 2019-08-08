@@ -56,7 +56,6 @@
             // 
             // TmrAlien
             // 
-            this.TmrAlien.Enabled = true;
             this.TmrAlien.Interval = 600;
             this.TmrAlien.Tick += new System.EventHandler(this.TmrAlien_Tick);
             // 
@@ -88,6 +87,7 @@
             this.LblScore.Name = "LblScore";
             this.LblScore.Size = new System.Drawing.Size(60, 30);
             this.LblScore.TabIndex = 3;
+            this.LblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -120,6 +120,7 @@
             this.LblTime.Name = "LblTime";
             this.LblTime.Size = new System.Drawing.Size(60, 30);
             this.LblTime.TabIndex = 7;
+            this.LblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip2
             // 
