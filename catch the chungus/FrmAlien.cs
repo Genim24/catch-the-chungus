@@ -54,7 +54,7 @@ namespace catch_the_chungus
         {
             score = 0;
             TmrAlien.Start(); //start the timer
-
+            TmrCountdown.Start();
         }
         private void MnuQuit_Click(object sender, EventArgs e)
         {
