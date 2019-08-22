@@ -95,18 +95,27 @@ namespace catch_the_chungus
             }
             if (score == 20)
             {
-                TmrAlien.Interval -= 85;
+                TmrAlien.Interval -= 95;
                 label5.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 30)
             {
-                TmrAlien.Interval -= 100;
+                TmrAlien.Interval -= 150;
                 label6.ForeColor = System.Drawing.Color.Green;
             }
             if (score == 40)
             {
-                TmrAlien.Interval -= 170;
+                TmrAlien.Interval -= 190;
                 label7.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 50)
+            {
+                label9.ForeColor = System.Drawing.Color.Green;
+                TmrCountdown.Stop();
+                TmrAlien.Stop();
+                LblScore.Enabled = false;
+                LblTime.Enabled = false;
+                MessageBox.Show("Game Over! You win");
             }
         }
 
