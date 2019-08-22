@@ -16,7 +16,7 @@ namespace catch_the_chungus
         Image alien = Image.FromFile(Application.StartupPath + @"\alien.png");
         Graphics g;
         Random rand = new Random();
-        int count = 20;
+        int count = 30;
         int score;
 
         public FrmAlien()
@@ -75,8 +75,7 @@ namespace catch_the_chungus
                 LblTime.Enabled = false;
                 MessageBox.Show("Game Over!");
             }
-
-
+            
         }
 
         private void PnlGame_MouseDown(object sender, MouseEventArgs e)
@@ -89,7 +88,26 @@ namespace catch_the_chungus
                 score++;//add 1 to the score
                 LblScore.Text = score.ToString();// display the score
             }
-
+            if (score == 10)
+            {
+                TmrAlien.Interval -= 70;
+                label8.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 20)
+            {
+                TmrAlien.Interval -= 85;
+                label5.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 30)
+            {
+                TmrAlien.Interval -= 100;
+                label6.ForeColor = System.Drawing.Color.Green;
+            }
+            if (score == 40)
+            {
+                TmrAlien.Interval -= 170;
+                label7.ForeColor = System.Drawing.Color.Green;
+            }
         }
 
         private void TxtName_TextChanged(object sender, EventArgs e)
